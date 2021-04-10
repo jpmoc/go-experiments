@@ -1,0 +1,8 @@
+project: toto
+
+app:
+  function:
+    name: 'titi'
+    build:
+      kaniko: true
+      skaffold: yes

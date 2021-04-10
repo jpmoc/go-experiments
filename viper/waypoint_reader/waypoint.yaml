@@ -1,0 +1,24 @@
+app:
+- example-nodejs:
+  - build:
+    - registry:
+      - use:
+        - docker:
+          - image: nodejs-example
+            local: true
+            tag: latest
+      use:
+      - pack:
+        - {}
+    deploy:
+    - use:
+      - kubernetes:
+        - probe_path: /
+    labels:
+    - env: dev
+      service: example-nodejs
+    release:
+    - use:
+      - kubernetes:
+        - {}
+project: example-nodejs
