@@ -1,0 +1,16 @@
+dbInstance:
+  name: pg-instance
+  id: test-db
+  storageGB: 5
+  dbInstanceClass: db.t2.small
+  multiAZ: true
+  publiclyAccessible: false
+  engineVersion: "9.6"
+  storageType: gp2
+  region: eu-central-1
+  whiteList:
+    - 127.0.0.1
+    - 127.0.0.2
+  clothing:
+     jacket: leather
+     trousers: denim

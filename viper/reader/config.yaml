@@ -6,3 +6,7 @@ app:
     build:
       kaniko: true
       skaffold: yes
+
+  whiteList:
+    - 127.0.0.1
+    - 127.0.0.2

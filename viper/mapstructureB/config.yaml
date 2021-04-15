@@ -1,0 +1,17 @@
+toto:
+  countryQueries:
+    sg:
+      - image: gmap
+        tag: postal_code
+      - qtype: gmap
+        qplacetype: address
+      - qtype: geocode
+        qplacetype: street_address
+  
+    hk:
+      - qtype: gmap
+        qplacetype: postal_code
+      - qtype: gmap
+        qplacetype: address
+      - qtype: geocode
+        qplacetype: street_address

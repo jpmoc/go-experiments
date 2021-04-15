@@ -1,0 +1,7 @@
+endpoints:
+  url: http://...
+  access_key: secret
+  location: online
+docker:
+  - image: 123
+    tag: local
